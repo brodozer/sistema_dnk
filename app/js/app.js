@@ -124,32 +124,32 @@ $(document).ready(function() {
 		$('body, html').animate({ scrollTop: destination * zoom }, 500);
 	});	
 
-	$.magnificPopup.open({
-		tClose: 'Закрыть',
-		removalDelay: 0,
-		// fixedContentPos: false,
-		// fixedBgPos: true,
-		// overflowY: 'auto',			
-		mainClass: 'css-modal-animate',				
-		items: {
-			src: '#learn',
-			type: 'inline'
-		},
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 1024)
-					$('body').addClass('no-scroll')
+	// $.magnificPopup.open({
+	// 	tClose: 'Закрыть',
+	// 	removalDelay: 0,
+	// 	// fixedContentPos: false,
+	// 	// fixedBgPos: true,
+	// 	// overflowY: 'auto',			
+	// 	mainClass: 'css-modal-animate',				
+	// 	items: {
+	// 		src: '#learn',
+	// 		type: 'inline'
+	// 	},
+	// 	callbacks: {
+	// 		beforeOpen: function() {
+	// 			if($(window).width() < 1024)
+	// 				$('body').addClass('no-scroll')
 
-				// $('body, html').addClass('js-lock')
-			},
-			afterClose: function() {
-				// $('body, html').removeClass('js-lock')
-				$('#learn').find('.video__iframe').remove()
-		        $('body').removeClass('no-scroll') 	
-			}	
-		}
+	// 			// $('body, html').addClass('js-lock')
+	// 		},
+	// 		afterClose: function() {
+	// 			// $('body, html').removeClass('js-lock')
+	// 			$('#learn').find('.video__iframe').remove()
+	// 	        $('body').removeClass('no-scroll') 	
+	// 		}	
+	// 	}
 
-	}, 0);
+	// }, 0);
 
 	$('.css-tooltip-parent').on('click', function() {
 		var winWidth = $(window).width();
